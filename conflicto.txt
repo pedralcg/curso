@@ -1,1 +1,5 @@
 Este documento podrá ha tenido un conflicto en local
+
+Este documento tiene un conflicto en red
+
+TODO CORREGIDO
