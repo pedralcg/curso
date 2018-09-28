@@ -1,0 +1,38 @@
+####### Práctica 2 ###############
+## Crear rama llamada "rama1"
+git branch rama1
+git checkout rama1
+git push --set-upstream origin rama1
+
+
+## Agregamos txt fichero.txt
+
+## Hacemos commit y etiquetamos
+git add .
+git status
+git commit -m "commit_fichero_txt"
+git tag -a v0.0.1pedro
+git push
+
+
+## Creamos rama metarama
+git branch metarama
+git checkout metarama
+git push --set-upstream origin metarama
+
+
+## Modificamos el txt (metarama) y hacemos commit
+# Modificamos el fichero
+git add .
+git status
+git commit -m "commit_modificacion_metarama"
+git push
+
+## Hacer rebase en rama1
+git checkout rama1
+git rebase metarama
+
+## Fusionar rama1 con rama principal
+git checkout master
+git pull
+#git branch -d rama1
